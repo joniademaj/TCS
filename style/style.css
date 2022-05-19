@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;800&family=Oswald:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Oswald;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+header{
+    /* position: fixed; */
+    background-color: white;
+    margin-left: -11px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+}
+.contact-link{
+    border-radius: 50px;
+    background-color: black;
+    width: 130px;
+}
+.contact-item .contact-link{
+    display: flex;
+    justify-content: center;
+}
+.nav-item .contact-link{
+    color: white !important;
+}
+.navbar-brand img{
+    width: 100px;
+}
+.nav-item a{
+    color: black !important;
+    font-size: 20px;
+    margin: 0px 20px 0px 20px;
+}
+.navigation ul{
+    display: flex;
+    height: 70px;
+    list-style-type: none;
+    align-items: center;
+}
+.navigation ul li{
+    margin-left: 10px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: black;
+}
+.banner{
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    width: 700px;
+}
+.banner .text-content{
+    width: 400px;
+    animation: textAnimation;
+    animation-duration: 0.2s;
+}
+.circle{
+    width: 60px;
+    height: 60px;
+    background-color: black;
+    border-radius: 50px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    position: fixed;
+    top: 85%;
+    left: 90%;
+    z-index: 2;
+}
+.scroll-to-the-top-text{
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    z-index: 2;
+    display: none;
+}
+.circle i {
+    color: white;
+    font-size: 22px;
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.service{
+    width: 300px;
+    height: 200px;
+    margin: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+}
+.service:hover{
+    transform: scale(1.023);
+}
+.service i{
+    font-size: 50px;
+}
+.service-content{
+    margin-top: 100px;
+}
+.technologies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.technologies .tech img{
+    width: 70px;
+}
+.technologies .tech{
+    width: 500px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    height: 90px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.tech:hover{
+    transform: scale(1.023);
+}
+.technologies-content{
+    margin-top: 200px;
+}
+header{
+    margin-bottom: 100px;
+}
+@keyframes textAnimation{
+    0% { margin-left: -500px }
+    25% { margin-left: -400px }
+    50% { margin-left: -300px }
+    75% { margin-left: -200px }
+    100% { margin-left: 0px }
+}
+.projects{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.project{
+    position: relative;
+}
+.project .fa-link{
+    position: absolute;
+    bottom: 10%;
+    left: 4%;
+    font-size: 25px;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: black;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.projects img{
+    width: 800px;
+    transition: 0.3s;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin: 10px;
+}
+.projects img:hover{
+    opacity: 0.3;
+    cursor: pointer;
+    
+}
+.navbar-toggler{
+    border: none;
+    box-shadow: none !important;
+}
+.about-us p{
+    font-size: 19px;
+}
+.view img{
+    width: 600px;
+    margin: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.view{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+.view .item{
+    display: flex;
+}
+.item strong p {
+    margin-right: 10px;
+}
+.project-info{
+    padding: 30px;
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.work-together{
+    margin-top: 200px;
+}
+.contact{
+    display: flex;
+}
+.social-media{
+    display: flex;
+}
+.social-media a{
+    color: black;
+    text-decoration: none;
+}
+.contact-info i{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.contact-info div a{
+    color: black;
+    text-decoration: none;
+}
+.contact-info div a i{
+    font-size: 50px;
+}
+.social-media i{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 23px;
+}
+.social-media i:hover{
+    background-color: black;
+    color: white;
+}
+.info-section p{
+    color: lightgray;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+}
+.form form input{
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    outline: 0;
+    border: 1px solid black;
+}
+.form form textarea{
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    outline: 0;
+    border: 1px solid black;
+}
+.form form button{
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.form form button:hover{
+    background-color: black;
+    color: white;
+}
+.capabilities .item-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.responsive-capabilities .item-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+}
+.item-content p {
+    width: 500px;
+}
+.ssl-image{
+    margin-right: 50px;
+}
+footer{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: -1px -16px 15px -11px rgba(0,0,0,0.1);
+}
+footer .content{
+    margin-top: 20px;
+}
+.footer-nav ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+.footer-nav ul li a{
+    color: black;
+    text-decoration: none;
+    margin: 18px;
+}
+div .whatsapp_float i{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 1300px){
+    .banner{
+        height: calc(100vh - 70px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .banner img{
+        width: 300px;
+    }
+    .banner .text-content{
+        width: 230px;
+        animation: textAnimation;
+        animation-duration: 0.2s;
+        text-align: center;
+    }
+    .services{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .service{
+        width: 320px;
+        height: auto;
+        margin: 5px;
+        padding: 20px;
+        border-radius: 10px;
+        border: 1px solid lightgray;
+    }
+    .service i{
+        font-size: 50px;
+    }
+    .technologies .tech{
+        width: 320px;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        height: 90px;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .contact{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-info i{
+        font-size: 25px;
+        margin-bottom: 30px;
+        display: flex;
+        margin-left: -210px;
+    }
+    .social-media i{
+        width: 50px;
+        height: 50px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        margin: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 23px;
+    }
+    .social-media i:hover{
+        background-color: black;
+        color: white;
+    }
+    .info-section p{
+        color: lightgray;
+    }
+    .info-section{
+        margin-bottom: 50px;
+    }
+    .form form{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 1000px){
+    .projects img{
+        width: 330px;
+        transition: 0.3s;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    .project .fa-link{
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        font-size: 20px;
+        color: white;
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form form input{
+        width: 400px;
+        padding: 10px;
+        margin: 10px;
+        outline: 0;
+    }
+    .form form textarea{
+        width: 400px;
+        padding: 10px;
+        margin: 10px;
+        outline: 0;
+    }
+    .form form button{
+        width: 200px;
+        background-color: transparent;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+    .circle{
+        width: 60px;
+        height: 60px;
+        background-color: black;
+        border-radius: 50px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        position: fixed;
+        top: 85%;
+        left: 85%;
+    }
+    .circle i {
+        color: white;
+        font-size: 22px;
+    }
+    .capabilities .item-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-content img{
+        width: 300px;
+    }
+    .item-content p {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .view img{
+        width: 300px;
+        margin: 10px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .project-info{
+        padding: 30px;
+        margin: 10px;
+        width: 300px;
+        height: 200px;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    }
+    .form form input{
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        outline: 0;
+    }
+    .form form textarea{
+        width: 300px;
+        padding: 10px;
+        margin: 10px;
+        outline: 0;
+    }
+    .form form button{
+        width: 200px;
+        background-color: transparent;
+        border: 1px solid black;
+        padding: 10px;
+        border-radius: 30px;
+        transition: 0.3s;
+    }
+    .contact-info i{
+        font-size: 25px;
+        margin-bottom: 30px;
+        margin-left: -120px;
+    }
+    .contact-info i span{
+        padding-left: 30px;
+    }
+    .info-section{
+        margin-left: 20px;
+    }
+    .circle{
+        width: 60px;
+        height: 60px;
+        background-color: black;
+        border-radius: 50px;
+        line-height: 60px;
+        text-align: center;
+        cursor: pointer;
+        position: fixed;
+        top: 85%;
+        left: 80%;
+    }
+    .circle i {
+        color: white;
+        font-size: 22px;
+    }
+    .contact-link{
+        border-radius: 50px;
+        background-color: black;
+        width: 320px;
+    }
+    .ssl-image{
+        margin-right: 0px;
+    }
+}
