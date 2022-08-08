@@ -23,10 +23,13 @@
 
     
 ?>
-<section class="container work-together">
-        <h1 class="text-center mb-5">Contact Us</h1>
+<section class="container-fluid work-together-contact-page">
+        <div style="color: white; width: 350px">
+            <h1>Grow your business with our talented team</h1>
+        </div>
         <div class="contact">
-            <div class="info-section">
+            <h1 class="mb-5">Contact Us</h1>
+            <!-- <div class="info-section">
                 <h3>Technology Computing and Solution - TCS</h3>
                 <p>Find us on social media:</p>
                 <div class="social-media">
@@ -39,19 +42,22 @@
             <div class="contact-info">
                 <i class="fa fa-envelope"> <span>tcs@gmail.net</span></i>
                 <i class="fa fa-phone"> <span>+38344644022</span></i>
-                <div>
-                    <a href="https://wa.me/38344644022" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-                </div>
-            </div>
+            </div> -->
             <div class="form">
                 <form method="POST">
                     <input type="text" name="name" placeholder="Your Name">
                     <input type="text" name="email" placeholder="Your Email">
                     <input type="text" name="subject" placeholder="Your Subject">
                     <textarea name="message" cols="30" rows="7" placeholder="Your Message"></textarea>
-                    <button type="submit" class="submit" name="submit">Send Message</button>
+                    <div>
+                        <button type="submit" class="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
     </section>
+
+    <div class="circle">
+        <i class="fa fa-arrow-up"></i>
+    </div>
 <?php include("footer.php") ?>

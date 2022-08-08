@@ -11,24 +11,16 @@
     }
   }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/8d714ffa80.js" crossorigin="anonymous"></script>
-    <title>TCS - Work</title>
-    <style>
-      <?php include("style/style.css") ?>
-    </style>
-</head>
-<body>
 
-    <section class="container">
-        <div>
+    <section class="container our-work">
+      <div>
+        <h1>Our Projects</h1>
+        <p>In the section below you will find our projects build by our professional team</p>
+      </div>
+    </section>
+
+    <section class="container mt-5" style="margin-top: 250px !important">
+        <div class="title">
           <h1 class="text-center">Projects</h1>
         </div>
     </section>
@@ -37,14 +29,23 @@
         <i class="fa fa-arrow-up"></i>
     </div>
 
-    <section class="container">
+    <section class="container our-projects">
       <div class="projects">
         <?php if(count($projects) > 0): ?>
           <?php foreach($projects as $project): ?>
-            <div class="project">
-              <img src="assets/images/<?= $project['project-img'] ?>" id="img">
-              <div class="url">
-                <a href="view.php?id=<?= $project['id'] ?>" class="hidden" id="link"><i class="fa fa-link"></i></a>
+            <div class="project-content">
+              <div class="project-background">
+                <img src="assets/images/project-image.png" alt="">
+              </div>
+              <div class="project">
+                <a href="view.php?id=<?= $project['id'] ?>">
+                  <img src="assets/images/<?= $project['project-img'] ?>" id="img">
+                </a>
+                
+                <!-- <div class="url">
+                  <a href="view.php?id=<?= $project['id'] ?>" class="hidden" id="link"><i class="fa fa-link"></i></a>
+                </div> -->
+
               </div>
             </div>
           <?php endforeach; ?>
@@ -54,5 +55,3 @@
     
     <script src="main.js"></script>
     <?php include("footer.php") ?>
-</body>
-</html>

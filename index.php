@@ -1,123 +1,471 @@
 <?php include("header.php") ?>
-    <section class="banner container">
-        <div class="text-content">
-            <h1>We transform businesses with powerful digital solutions</h1>
-        </div>
-        <div>
-            <img src="assets/images/banner.png" alt="">
-        </div>
-    </section>
 
-    <div class="scroll-to-the-top-text">
-        <p>Scroll to the top</p>
-    </div>
+    <section class="banner container-fluid">
+        <div class="text-content" id="text-content">
+        <!-- We transform businesses with powerful digital solutions -->
+            <h1 class="title-text-content"><?php echo $lang["banner-title"] ?></h1>
+            <div>
+                <p>We are a software development company that provides cutting edge engineering solutions, helping many clients with complex issues that always emerge during their digital evolution journey.</p>
+            </div>
+            <div class="project-start-option">
+                <a href="contact.php" class="start-project">Get in Touch</a>
+                <!-- <div>
+                    <span class="call-us">Call us</span>
+                    <span class="number">(+383) 044-644-022</span>
+                </div> -->
+            </div>
+        </div>
+        <!-- <div>
+            <img src="assets/images/banner3.svg" alt="">
+        </div> -->
+    </section>
+</div>
     <div class="circle">
         <i class="fa fa-arrow-up"></i>
     </div>
-    
-    <section class="container service-content">
-        <h1 class="text-center">Services</h1>
-        <div class="services mt-5">
-            <div class="service web-development">
-                <i class="fa fa-window-maximize"></i>
-                <h5>Web Development</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus autem cum rem doloremque quia quam.</p>
-            </div>
-            <div class="service web-hosting">
-                <i class="fa fa-cloud"></i>
-                <h5>Web hosting</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium obcaecati iusto incidunt? Possimus, autem enim!</p>
-            </div>
-            <div class="service desktop-apps-development">
-                <i class="fa fa-desktop"></i>
-                <h5>Desktop Apps</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium temporibus ea vero numquam, ipsum nemo?</p>
-            </div>
-            <div class="service ssl">
-                <i class="fa fa-lock"></i>
-                <h5>SSL</h5>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eum nulla quam aut repellat beatae!</p>
-            </div>
+    <section class="tools-technologies container">
+        <div class="tools-technologies-title">
+            <h1 class="text-center">Tools & Technologies</h1>
+            <p class="text-center mt-3 mb-3">TCS continuously invests in training and education for learning new tools and technologies to be able to help clients with their requirements</p>
         </div>
-    </section>
-
-    <section class="container technologies-content">
-        <h1 class="text-center">Technologies</h1>
-        <div class="technologies mt-5">
-            <div class="tech">
-                <img src="assets/images/html-logo.jpg">
-                <p>HTML</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/css-logo.webp">
-                <p>CSS</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/sass-logo.png">
-                <p>SASS</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/js-logo.webp">
-                <p>Java Script</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/react.png">
-                <p>React</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/php-logo.png">
-                <p>PHP</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/mysql.png">
-                <p>MYSQL</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/laravel-logo.png">
-                <p>Laravel</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/java-logo.jpg">
-                <p>Java</p>
-            </div>
-            <div class="tech">
-                <img src="assets/images/python.png">
-                <p>Python</p>
-            </div>
-        </div>
-    </section>
-
-    <section class="container work-together">
-        <h1 class="text-center mb-5">Contact Us</h1>
-        <div class="contact">
-            <div class="info-section">
-                <h3>Technology Computing and Solution - TCS</h3>
-                <p>Find us on social media:</p>
-                <div class="social-media">
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/tcs.dev/"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/tcs.dev/"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-linkedin"></i></a>
+        <div class="tools-technologies-content" data-aos="zoom-in-up">
+            <div class="tech languages-content left">
+                <div class="tech-title">
+                    <i class="fa fa-code"></i> 
+                    <span>Languages</span>
+                </div>
+                <div class="languages">
+                    <p>Html</p>
+                    <p>Css</p>
+                    <p>Java Script</p>
+                    <p>PHP</p>
+                    <p>Java</p>
+                    <p>C#</p>
+                    <p>Python</p>
                 </div>
             </div>
-            <div class="contact-info">
-                <i class="fa fa-envelope"> tcs@gmail.net</i>
-                <i class="fa fa-phone"> +38344644022</i>
+            <div class="tech languages-content right">
                 <div>
-                    <a href="https://wa.me/38344644022" class="whatsapp_float" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+                    <i class="fa fa-gear"></i>
+                    <span>Frameworks</span>
+                </div>
+                <div class="languages">
+                    <p>React</p>
+                    <p>Laravel</p>
+                    <p>Django</p>
                 </div>
             </div>
+            <div class="tech languages-content left-bottom">
+                <div>
+                    <i class="fa fa-database"></i>
+                    <span>Database Menagment</span>
+                </div>
+                <div class="languages">
+                    <p>Mysql</p>
+                    <p>Sql Server</p>
+                    <p>Sqlite</p>
+                </div>
+            </div>
+            <div class="tech languages-content right-bottom">
+                <div>
+                    <i class="fa fa-cloud"></i>
+                    <span>Cloud</span>
+                </div>
+                <div class="languages">
+                    <p>Google Cloud</p>
+                    <p>Amazon Web Services (AWS)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="service-content">
+            <div class="services-title container">
+                <h1 class="text-center">What we offer</h1>
+                <p class="text-center mt-3 mb-3">TCS provides a wide range of services for our clients which helps your business reach a new level of competitive capabilities.</p>
+            </div>
+            <div class="services container-fluid"> 
+                <div class="container services-content" data-aos="zoom-in-up">
+                    <div class="service web-development">
+                        <i class="fa fa-window-maximize"></i>
+                        <h5>Web Development</h5>
+                        <p>We build web apps with modern responsive layout for all kind of devices</p>
+                    </div>
+                    <div class="service web-hosting">
+                        <i class="fa fa-cloud"></i>
+                        <h5>Web hosting</h5>
+                        <p>Hosting is what makes your site visible on the web, we host your website on the most trending cloud platforms</p>
+                    </div>
+                    <div class="service desktop-apps-development">
+                        <i class="fa fa-desktop"></i>
+                        <h5>Desktop Apps</h5>
+                        <p>We build high quality of software for your business</p>
+                    </div>
+                    <div class="service ssl">
+                        <i class="fa fa-lock"></i>
+                        <h5>SSL</h5>
+                        <p>For more secure websites we offer SSL certificate </p>
+                    </div>
+                    <div class="service cyber-security">
+                        <i class="fa fa-user-secret"></i>
+                        <h5>Cyber Security</h5>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A eum nulla quam aut repellat beatae!</p>
+                    </div>
+                    <div class="service cyber-security">
+                        <i class="fa fa-bullhorn"></i>
+                        <h5>Social Media Menagment</h5>
+                        <p>We offer social media menagment to help your business grow faster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container path">
+        <div>
+            <div class="path-title container">
+                <h1 class="text-center">Software Development</h1>
+                <p class="text-center mt-3 mb-3">We use best practice processes and development methodologies as a foundation in order to provide technology solutions in a structured and methodical way.</p>
+            </div>
+            <div class="path-content">
+                <div class="accordions" data-aos="zoom-in-up">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              <span class="plan-number">1</span> Planning 
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aperiam porro, ad quis quas eius, quos omnis labore dolorum, ipsa est maxime? Quas, et voluptate tempora dolorum quae totam optio?</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                <span class="plan-number">2</span> Analysis
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur numquam ut repellendus delectus porro eius cumque soluta? Accusamus fugit rem, aliquid architecto minus esse ex in corrupti voluptate, autem ea.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                <span class="plan-number">3</span>Design
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis molestias voluptas consequatur obcaecati porro atque ea eos cum, totam inventore natus nostrum, nulla adipisci iusto aperiam temporibus et eveniet fugiat!</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                <span class="plan-number">4</span>Client Apporval
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non veritatis nisi neque rem, quia praesentium impedit, atque corporis necessitatibus consequuntur quaerat labore laborum animi facilis! Illo in mollitia accusantium perspiciatis.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                <span class="plan-number">5</span>Development
+                            </button>
+                          </h2>
+                          <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem id esse aliquam eveniet nobis iusto minus eos excepturi qui ipsam, consectetur amet, ipsa maxime perspiciatis! Iste voluptatum ipsum necessitatibus deserunt!</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                <span class="plan-number">6</span>Testing
+                            </button>
+                          </h2>
+                          <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus voluptatum quaerat nemo amet autem fugiat totam atque perferendis, ab, quos minus adipisci obcaecati natus consectetur, fugit ad eligendi ducimus?</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                <span class="plan-number">7</span>Client Feedback
+                            </button>
+                          </h2>
+                          <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odio repudiandae officia soluta possimus ullam nihil officiis omnis vero cupiditate doloremque, vel recusandae perferendis modi! Obcaecati impedit qui doloribus tempore.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                <span class="plan-number">8</span>Launch
+                            </button>
+                          </h2>
+                          <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptatem deleniti fuga quisquam obcaecati nesciunt cum maiores culpa quod, similique quos officia quam nam inventore nemo, laudantium ab, sed eveniet.</div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="path-image" data-aos="zoom-in-up">
+                    <img src="assets/images/software-development-path.png" alt="">
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="social-media-offers">
+        <div class="social-media-title container">
+            <h1 class="text-center">Social Media</h1>
+            <p class="text-center mt-3 mb-3">Besides software development we provide services for social media as well, such as social media menagment, account disable and advertisement, which are very important for a business growth</p>
+        </div>
+        <div class="social-media-content container-fluid">
+            <div class="container social-media-cards" data-aos="zoom-in-up">
+                <div class="social-media-card">
+                    <div class="social-media-menagment">
+                        <div class="image">
+                            <img src="assets/images/social-media-img.png">
+                        </div>
+                        <div>
+                            <h3>Social Media Menagment</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed tempora aspernatur dolore cum a, beatae sunt.</p>
+                        </div>
+                        <div class="learn-more">
+                            <a href="social-media.php">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media-card">
+                    <div class="social-media-menagment">
+                        <div class="image">
+                            <img src="assets/images/disable-image.png">
+                        </div>
+                        <div>
+                            <h3>Account Disable</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed tempora aspernatur dolore cum a, beatae sunt.</p>
+                        </div>
+                        <div class="learn-more">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media-card">
+                    <div class="social-media-menagment">
+                        <div class="image">
+                            <img src="assets/images/ads-image.png">
+                        </div>
+                        <div>
+                            <h3>Advertisement</h3>
+                        </div>
+                        <div class="text">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed tempora aspernatur dolore cum a, beatae sunt.</p>
+                        </div>
+                        <div class="learn-more">
+                            <a href="#">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="quotes">
+        <div class="container">
+            <div class="quote-content">
+                <div>
+                    <img src="assets/images/bill-gates.webp" alt="">
+                </div>
+                <div class="text-content">
+                    <i class="fa fa-quote-left"></i>
+                    <p>IF YOUR BUSINESS IS NOT ON THE INTERNET, THEN YOUR BUSINESS WILL BE OUT OF BUSINESS</p>
+
+                    <div class="author">
+                        <h4>- Bill Gates,</h4>
+                        <p>(Microsoft Founder)</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section> -->
+
+    <section class="talk-to-us">
+        <div class="talk-to-us-content">
+            <div class="text">
+                <p>TALK TO US TO GET AN OFFER THAT WILL HELP YOUR BUSINESS GROW FASTER </p>
+            </div>
+            <div>
+                <a href="contact.php" class="start-project">Talk to us</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="container-fluid">
+            <div class="why-us-title container">
+                <h1 class="text-center">Why Choose Us</h1>
+                <p class="text-center mt-3 mb-3">
+                    We have highly skilled developers with excellent technical knowledge and experience in using latest software standards, tools, platforms, frameworks and technologies, we invest continuously in training and education 
+                    to be able to help clients with any new technology
+                </p>
+            </div>
+            <div class="cards-content-bg">
+                <div class="cards-content container" data-aos="zoom-in-up">
+                    <div class="why-us-card">
+                        <span class="card-number">1</span>
+                        <div class="card-text">
+                            <h3>Creating Ideas with Passion</h3>
+                            <p>We provide digital solutions by bringing fresh ideas to the table every time with our team. We always believe that passion for codes create extraordinary things happen.</p>
+                        </div>
+                    </div>
+                    <div class="why-us-card">
+                        <span class="card-number">2</span>
+                        <div class="card-text">
+                            <h3>On Time Delivery</h3>
+                            <p>We deliver what others promise with on-time and affordable range.</p>
+                        </div>
+                    </div>
+                    <div class="why-us-card">
+                        <span class="card-number">3</span>
+                        <div class="card-text">
+                            <h3>Why Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ab nulla dignissimos ipsum molestias labore eius quis cum rem quidem, reprehenderit asperiores architecto.</p>
+                        </div>
+                    </div>
+                    <div class="why-us-card">
+                        <span class="card-number">4</span>
+                        <div class="card-text">
+                            <h3>Why Lorem Ipsum</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ab nulla dignissimos ipsum molestias labore eius quis cum rem quidem, reprehenderit asperiores architecto.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid work-together">
+        
+        <div class="contact">
+            <h1 class="mb-5">Contact Us</h1>
             <div class="form">
                 <form method="POST">
                     <input type="text" name="name" placeholder="Your Name">
                     <input type="text" name="email" placeholder="Your Email">
                     <input type="text" name="subject" placeholder="Your Subject">
                     <textarea name="message" cols="30" rows="7" placeholder="Your Message"></textarea>
-                    <button type="submit" class="submit">Send Message</button>
+                    <div>
+                        <button type="submit" class="submit">Send</button>
+                    </div>
                 </form>
             </div>
         </div>
+        <div class="what-next">
+            <div>
+                <h2>What Happens Next?</h2>
+            </div>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <p>Our sales menager reaches you out a few days after analyzing your business requirements</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <p>Our sales menager reaches you out a few days after analyzing your business requirements</p>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <p>Our sales menager reaches you out a few days after analyzing your business requirements</p>
+                </div>
+            </div>
+        </div>
     </section>
+    <?php if(!isset($_COOKIE["user"]) && isset($_SESSION["logged_in"]) == false): ?>
+        <section class="container cookies">
+            <div>
+                <p>We use cookies to improve your experience.
+                    By your continued use of this site you accept such use.
+                    Please see our policy for more information.
+                </p>
+                <div class="cookies-btn">
+                    <form class="cookies-form" action="" method="POST">
+                        <button name="accept-cookies">I Accept Cookies</button>
+                        <button name="refuse-cookies">I Refuse Cookies</button>
+                    </form>
+                    <a href="#">Privacy</a>
+                </div>
+            </div>
+        </section>
+    <?php endif; ?>
+
+    <?php
+        if(isset($_POST["accept-cookies"])){
+
+            setcookie("user", true, time() + 24 * 3600);
+            $newViewer = 1;
+        
+            if(!isset($_COOKIE["user"])){
+                $sql = "INSERT INTO `viewers` (`number`) VALUES (?)";
+                $statement = $pdo->prepare($sql);
+                $statement->execute([$newViewer]);
+            }
+
+            echo "
+                <script>
+                    const cookies = document.querySelector('.cookies');
+
+                    cookies.style.display = 'none';
+                </script>
+            ";            
+        }else if(isset($_POST["refuse-cookies"])){
+            echo "
+                <script>
+                    const cookies = document.querySelector('.cookies');
+
+                    cookies.style.display = 'none';
+                </script>
+            ";
+        }
+        
+    ?>
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        const allElements = document.querySelector(".all-content");
+        const circle = document.querySelector(".circle");
+        const closeBtn = document.getElementById("close");
+        const btn = document.querySelector(".navbar-toggler");
+        const header = ducment.querySelector("header");
+        btn.addEventListener("click", () => {
+            // allElements.classList.toggle("not-active");
+            header.classList.toggle("header-white");
+        })
+
+        // const navSlide = () => {
+        //     const btn = document.querySelector(".navbar-toggler");
+        //     const nav = document.querySelector(".navbar-nav");
+
+        //     btn.addEventListener("click", () => {
+        //         nav.classsList.toggle("nav-active");
+        //     });
+        // }
+
+        // navSlide();
+    </script>
     
 <?php include("footer.php") ?>
