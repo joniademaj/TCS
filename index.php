@@ -3,12 +3,12 @@
     <section class="banner container-fluid">
         <div class="text-content" id="text-content">
         <!-- We transform businesses with powerful digital solutions -->
-            <h1 class="title-text-content"><?php echo $lang["banner-title"] ?></h1>
+            <h1 class="title-text-content animated-title" data-aos="zoom-in"><?php echo $lang["banner-title"] ?></h1>
             <div>
-                <p>We are a software development company that provides cutting edge engineering solutions, helping many clients with complex issues that always emerge during their digital evolution journey.</p>
+                <p data-aos="zoom-out"><?php echo $lang["banner-text"]; ?></p>
             </div>
             <div class="project-start-option">
-                <a href="contact.php" class="start-project">Get in Touch</a>
+                <a data-aos="zoom-in" href="contact.php" class="start-project"><?php echo $lang["get-in-touch"] ?></a>
                 <!-- <div>
                     <span class="call-us">Call us</span>
                     <span class="number">(+383) 044-644-022</span>
@@ -19,20 +19,20 @@
             <img src="assets/images/banner3.svg" alt="">
         </div> -->
     </section>
-</div>
+
     <div class="circle">
         <i class="fa fa-arrow-up"></i>
     </div>
     <section class="tools-technologies container">
         <div class="tools-technologies-title">
-            <h1 class="text-center">Tools & Technologies</h1>
-            <p class="text-center mt-3 mb-3">TCS continuously invests in training and education for learning new tools and technologies to be able to help clients with their requirements</p>
+            <h1 class="text-center"><?php echo $lang["technologies-title-section"] ?></h1>
+            <p class="text-center mt-3 mb-3"><?php echo $lang["technologies-text"] ?></p>
         </div>
         <div class="tools-technologies-content" data-aos="zoom-in-up">
             <div class="tech languages-content left">
                 <div class="tech-title">
                     <i class="fa fa-code"></i> 
-                    <span>Languages</span>
+                    <span><?php echo $lang["languages"] ?></span>
                 </div>
                 <div class="languages">
                     <p>Html</p>
@@ -47,7 +47,7 @@
             <div class="tech languages-content right">
                 <div>
                     <i class="fa fa-gear"></i>
-                    <span>Frameworks</span>
+                    <span><?php echo $lang["frameworks"] ?></span>
                 </div>
                 <div class="languages">
                     <p>React</p>
@@ -58,7 +58,7 @@
             <div class="tech languages-content left-bottom">
                 <div>
                     <i class="fa fa-database"></i>
-                    <span>Database Menagment</span>
+                    <span><?php echo $lang["database-menagment"] ?></span>
                 </div>
                 <div class="languages">
                     <p>Mysql</p>
@@ -69,7 +69,7 @@
             <div class="tech languages-content right-bottom">
                 <div>
                     <i class="fa fa-cloud"></i>
-                    <span>Cloud</span>
+                    <span><?php echo $lang["cloud"] ?></span>
                 </div>
                 <div class="languages">
                     <p>Google Cloud</p>
@@ -82,30 +82,30 @@
     <section>
         <div class="service-content">
             <div class="services-title container">
-                <h1 class="text-center">What we offer</h1>
-                <p class="text-center mt-3 mb-3">TCS provides a wide range of services for our clients which helps your business reach a new level of competitive capabilities.</p>
+                <h1 class="text-center"><?php echo $lang["services-title-section"] ?></h1>
+                <p class="text-center mt-3 mb-3"><?php echo $lang["services-text-section"] ?></p>
             </div>
             <div class="services container-fluid"> 
                 <div class="container services-content" data-aos="zoom-in-up">
                     <div class="service web-development">
                         <i class="fa fa-window-maximize"></i>
-                        <h5>Web Development</h5>
-                        <p>We build web apps with modern responsive layout for all kind of devices</p>
+                        <h5><?php echo $lang["web-development"] ?></h5>
+                        <p><?php echo $lang["web-development-text"] ?></p>
                     </div>
                     <div class="service web-hosting">
                         <i class="fa fa-cloud"></i>
-                        <h5>Web hosting</h5>
-                        <p>Hosting is what makes your site visible on the web, we host your website on the most trending cloud platforms</p>
+                        <h5><?php echo $lang["web-hosting"] ?></h5>
+                        <p><?php echo $lang["web-hosting-text"] ?></p>
                     </div>
                     <div class="service desktop-apps-development">
                         <i class="fa fa-desktop"></i>
-                        <h5>Desktop Apps</h5>
-                        <p>We build high quality of software for your business</p>
+                        <h5><?php echo $lang["desktop-apps"] ?></h5>
+                        <p><?php echo $lang["desktop-apps-text"] ?></p>
                     </div>
                     <div class="service ssl">
                         <i class="fa fa-lock"></i>
-                        <h5>SSL</h5>
-                        <p>For more secure websites we offer SSL certificate </p>
+                        <h5><?php echo $lang["ssl"] ?></h5>
+                        <p><?php echo $lang["ssl-text"] ?></p>
                     </div>
                     <div class="service cyber-security">
                         <i class="fa fa-user-secret"></i>
@@ -114,8 +114,8 @@
                     </div>
                     <div class="service cyber-security">
                         <i class="fa fa-bullhorn"></i>
-                        <h5>Social Media Menagment</h5>
-                        <p>We offer social media menagment to help your business grow faster</p>
+                        <h5><?php echo $lang["social-media-menagment"] ?></h5>
+                        <p><?php echo $lang["social-media-menagment-text"] ?></p>
                     </div>
                 </div>
             </div>
@@ -125,8 +125,8 @@
     <section class="container path">
         <div>
             <div class="path-title container">
-                <h1 class="text-center">Software Development</h1>
-                <p class="text-center mt-3 mb-3">We use best practice processes and development methodologies as a foundation in order to provide technology solutions in a structured and methodical way.</p>
+                <h1 class="text-center"><?php echo $lang["software-development-title-section"] ?></h1>
+                <p class="text-center mt-3 mb-3"><?php echo $lang["software-development-text"] ?></p>
             </div>
             <div class="path-content">
                 <div class="accordions" data-aos="zoom-in-up">
@@ -134,81 +134,81 @@
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingOne">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                              <span class="plan-number">1</span> Planning 
+                              <span class="plan-number">1</span> <?php echo $lang["planning-title"] ?> 
                             </button>
                           </h2>
                           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum aperiam porro, ad quis quas eius, quos omnis labore dolorum, ipsa est maxime? Quas, et voluptate tempora dolorum quae totam optio?</div>
+                            <div class="accordion-body"><?php echo $lang["planning"] ?></div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingTwo">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                <span class="plan-number">2</span> Analysis
+                                <span class="plan-number">2</span> <?php echo $lang["analysis-title"] ?>
                             </button>
                           </h2>
                           <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur numquam ut repellendus delectus porro eius cumque soluta? Accusamus fugit rem, aliquid architecto minus esse ex in corrupti voluptate, autem ea.</div>
+                            <div class="accordion-body"><?php echo $lang["analysis"] ?></div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                <span class="plan-number">3</span>Design
+                                <span class="plan-number">3</span> <?php echo $lang["design-title"] ?>
                             </button>
                           </h2>
                           <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis molestias voluptas consequatur obcaecati porro atque ea eos cum, totam inventore natus nostrum, nulla adipisci iusto aperiam temporibus et eveniet fugiat!</div>
+                            <div class="accordion-body"><?php echo $lang["design"] ?></div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingFour">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                <span class="plan-number">4</span>Client Apporval
+                                <span class="plan-number">4</span> <?php echo $lang["client-approval-title"] ?>
                             </button>
                           </h2>
                           <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non veritatis nisi neque rem, quia praesentium impedit, atque corporis necessitatibus consequuntur quaerat labore laborum animi facilis! Illo in mollitia accusantium perspiciatis.</div>
+                            <div class="accordion-body"><?php echo $lang["client-approval"] ?></div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingFive">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                <span class="plan-number">5</span>Development
+                                <span class="plan-number">5</span> <?php echo $lang["development-title"] ?>
                             </button>
                           </h2>
                           <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem id esse aliquam eveniet nobis iusto minus eos excepturi qui ipsam, consectetur amet, ipsa maxime perspiciatis! Iste voluptatum ipsum necessitatibus deserunt!</div>
+                            <div class="accordion-body"><?php echo $lang["development"] ?></div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingSix">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                <span class="plan-number">6</span>Testing
+                                <span class="plan-number">6</span> <?php echo $lang["testing-title"] ?>
                             </button>
                           </h2>
                           <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium repellendus voluptatum quaerat nemo amet autem fugiat totam atque perferendis, ab, quos minus adipisci obcaecati natus consectetur, fugit ad eligendi ducimus?</div>
+                            <div class="accordion-body"><?php echo $lang["testing"] ?></div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingSeven">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                <span class="plan-number">7</span>Client Feedback
+                                <span class="plan-number">7</span> <?php echo $lang["client-feedback-title"] ?>
                             </button>
                           </h2>
                           <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odio repudiandae officia soluta possimus ullam nihil officiis omnis vero cupiditate doloremque, vel recusandae perferendis modi! Obcaecati impedit qui doloribus tempore.</div>
+                            <div class="accordion-body"><?php echo $lang["client-feedback"] ?></div>
                           </div>
                         </div>
                         <div class="accordion-item">
                           <h2 class="accordion-header" id="flush-headingEight">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                <span class="plan-number">8</span>Launch
+                                <span class="plan-number">8</span><?php echo $lang["launch-title"] ?>
                             </button>
                           </h2>
                           <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae voluptatem deleniti fuga quisquam obcaecati nesciunt cum maiores culpa quod, similique quos officia quam nam inventore nemo, laudantium ab, sed eveniet.</div>
+                            <div class="accordion-body"><?php echo $lang["launch"] ?></div>
                           </div>
                         </div>
                     </div>
@@ -239,9 +239,6 @@
                         <div class="text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed tempora aspernatur dolore cum a, beatae sunt.</p>
                         </div>
-                        <div class="learn-more">
-                            <a href="social-media.php">Learn More</a>
-                        </div>
                     </div>
                 </div>
                 <div class="social-media-card">
@@ -255,9 +252,6 @@
                         <div class="text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed tempora aspernatur dolore cum a, beatae sunt.</p>
                         </div>
-                        <div class="learn-more">
-                            <a href="#">Learn More</a>
-                        </div>
                     </div>
                 </div>
                 <div class="social-media-card">
@@ -270,9 +264,6 @@
                         </div>
                         <div class="text">
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore sed tempora aspernatur dolore cum a, beatae sunt.</p>
-                        </div>
-                        <div class="learn-more">
-                            <a href="#">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -339,15 +330,8 @@
                     <div class="why-us-card">
                         <span class="card-number">3</span>
                         <div class="card-text">
-                            <h3>Why Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ab nulla dignissimos ipsum molestias labore eius quis cum rem quidem, reprehenderit asperiores architecto.</p>
-                        </div>
-                    </div>
-                    <div class="why-us-card">
-                        <span class="card-number">4</span>
-                        <div class="card-text">
-                            <h3>Why Lorem Ipsum</h3>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, ab nulla dignissimos ipsum molestias labore eius quis cum rem quidem, reprehenderit asperiores architecto.</p>
+                            <h3>Because we focus on results</h3>
+                            <p>For us, it's all about what helps your bussiness grow.</p>
                         </div>
                     </div>
                 </div>
@@ -362,9 +346,9 @@
             <div class="form">
                 <form method="POST">
                     <input type="text" name="name" placeholder="Your Name">
-                    <input type="text" name="email" placeholder="Your Email">
-                    <input type="text" name="subject" placeholder="Your Subject">
-                    <textarea name="message" cols="30" rows="7" placeholder="Your Message"></textarea>
+                    <input type="text" name="email" id="email" placeholder="Your Email">
+                    <input type="text" name="subject" id="subject" placeholder="Your Subject">
+                    <textarea name="message" cols="30" id="message" rows="7" placeholder="Your Message"></textarea>
                     <div>
                         <button type="submit" class="submit">Send</button>
                     </div>
@@ -403,7 +387,7 @@
                         <button name="accept-cookies">I Accept Cookies</button>
                         <button name="refuse-cookies">I Refuse Cookies</button>
                     </form>
-                    <a href="#">Privacy</a>
+                    <a href="privacy-cookies-policy.php" class="cookie-policy">Privacy Policy</a>
                 </div>
             </div>
         </section>
@@ -440,32 +424,9 @@
         
     ?>
     <script src="main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
     <script>
-        AOS.init();
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        const allElements = document.querySelector(".all-content");
-        const circle = document.querySelector(".circle");
-        const closeBtn = document.getElementById("close");
-        const btn = document.querySelector(".navbar-toggler");
-        const header = ducment.querySelector("header");
-        btn.addEventListener("click", () => {
-            // allElements.classList.toggle("not-active");
-            header.classList.toggle("header-white");
-        })
-
-        // const navSlide = () => {
-        //     const btn = document.querySelector(".navbar-toggler");
-        //     const nav = document.querySelector(".navbar-nav");
-
-        //     btn.addEventListener("click", () => {
-        //         nav.classsList.toggle("nav-active");
-        //     });
-        // }
-
-        // navSlide();
+        
     </script>
     
 <?php include("footer.php") ?>

@@ -1,5 +1,10 @@
     <script src="main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <footer>
         <!-- <div class="content">
             <p>&copy; <strong>TCS</strong>. All Rights Reserved</p>
@@ -103,7 +108,7 @@
           <div>
             <div class="social-media">
               <a href="#"><i class="fa fa-twitter"></i></a>
-              <a href="https://www.instagram.com/tcs.dev/"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.facebook.com/TCS-DEV-104778472311916/"><i class="fa fa-facebook"></i></a>
               <a href="https://www.instagram.com/tcsdev/"><i class="fa fa-instagram"></i></a>
               <a href="#"><i class="fa fa-linkedin"></i></a>
             </div>

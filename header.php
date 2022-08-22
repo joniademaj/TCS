@@ -28,10 +28,11 @@
     ?>
     <?php if(end($currentPage) == "index.php"): ?>
       .background{
-        background-image: url("assets/images/background3.jpg");
+        /* background-image: url("assets/images/background3.jpg"); */
+        background-image: url("assets/images/last-bg.png");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: left;
         height: 800px;
         position: relative;
         opacity: 0.9;
@@ -50,17 +51,17 @@
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: 100vh;
+        height: 600px;
         opacity: 0.9;
       }
     <?php endif; ?>
     <?php if(end($currentPage) == "work.php"): ?>
       .background{
-        background-image: url("assets/images/networking-2.jpeg");
+        background-image: url("assets/images/projects-background2.webp");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: left;
-        height: 100vh;
+        background-position: center;
+        height: 600px;
         opacity: 0.9;
       }
     <?php endif; ?>
@@ -99,6 +100,11 @@
         background-size: cover;
         height: 700px;
       }
+      @media screen and (max-width: 1200px){
+        .work-together{
+          background-position: center;
+        }
+      }
     <?php endif; ?>
 
     .talk-to-us{
@@ -129,7 +135,7 @@
         </div>
       </div>
     </div> -->
-    <?php if(end($currentPage) !== "view.php" && end($currentPage) !== "login.php" && end($currentPage) !== "register.php" && end($currentPage) !== "dashboard.php" && end($currentPage) !== "social-media.php"): ?>
+    <?php if(end($currentPage) !== "view.php" && end($currentPage) !== "login.php" && end($currentPage) !== "register.php" && end($currentPage) !== "dashboard.php" && end($currentPage) !== "social-media.php" && end($currentPage) !== "privacy-cookies-policy.php"): ?>
       <div class="container-fluid background" id="back">
         
         <header class="header">
@@ -146,14 +152,16 @@
                   <a class="navbar-brand" href="#"><img src="assets/images/whitelogo.png" /></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                    <i class="fa fa-bars"></i>
+                    <i class="fa fa-bars burger"></i>
+                    <i class="fa fa-close close"></i>
                   </button>
+
                   <!-- <div class="burger">
                     <div class="line1"></div>
                     <div class="line2"></div>
                     <div class="line3"></div>
                   </div> -->
-  
+
                   <div class="nav-bar collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                       <li class="nav-item dropdown">

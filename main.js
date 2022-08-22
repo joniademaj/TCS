@@ -15,6 +15,15 @@ const cookiesContent = document.querySelector(".cookies");
         });
     });
 
+const btn = document.querySelector(".navbar-toggler");
+const closeBtn = document.querySelector(".close");
+const burger = document.querySelector(".burger");
+
+btn.addEventListener("click", () => {
+    closeBtn.classList.toggle("close-open");
+    burger.classList.toggle("burger-not-active");
+});
+
 // window.addEventListener("load", () => {
 //     loadingElement.style.display = "none";
 // });

@@ -1,31 +1,47 @@
 <?php include("database/dbConnection.php") ?>
 <?php include("header.php") ?>
 <?php 
-    $to = "ademajjoni3@gmail.com";
+    // $to = "ademajjoni3@gmail.com";
     
-    if(isset($_POST["submit"])){
-        if(isset($_POST["name"]) && !empty($_POST["name"]) 
-        && isset($_POST["email"]) && !empty($_POST["email"])
-         && isset($_POST["subject"]) && !empty($_POST["subject"]) && isset($_POST["message"]) && !empty($_POST["message"])){
-            $subject = $_POST["subject"];
-            $message = $_POST["message"];
+    // if(isset($_POST["submit"])){
+    //     if(isset($_POST["name"]) && !empty($_POST["name"]) 
+    //     && isset($_POST["email"]) && !empty($_POST["email"])
+    //      && isset($_POST["subject"]) && !empty($_POST["subject"]) && isset($_POST["message"]) && !empty($_POST["message"])){
+    //         $subject = $_POST["subject"];
+    //         $message = $_POST["message"];
 
-            $retval = mail ($to,$subject,$message);
+    //         $retval = mail ($to,$subject,$message);
 
-            if( $retval == true ) {
-                echo "Message sent successfully...";
-            }else {
-                echo "Message could not be sent...";
-            }
+    //         if( $retval == true ) {
+    //             echo "Message sent successfully...";
+    //         }else {
+    //             echo "Message could not be sent...";
+    //         }
             
-        }
-    }
+    //     }
+    // }
 
+    use PHPMailer\PHPMailer\PHPMailer;
+    
+        if(isset($_POST["submit"])){
+            if(isset($_POST["name"]) && !empty($_POST["name"]) 
+            && isset($_POST["email"]) && !empty($_POST["email"])
+            && isset($_POST["subject"]) && !empty($_POST["subject"]) 
+            && isset($_POST["message"]) && !empty($_POST["message"])){
+
+                $name = $_POST["name"];
+                $email = $_POST["email"];
+                $subject = $_POST["subject"];
+                $message = $_POST["message"];
+
+            
+            }
+        }
     
 ?>
 <section class="container-fluid work-together-contact-page">
         <div style="color: white; width: 350px">
-            <h1>Grow your business with our talented team</h1>
+            <h1 data-aos="zoom-in">Grow your business with our talented team</h1>
         </div>
         <div class="contact">
             <h1 class="mb-5">Contact Us</h1>
@@ -50,7 +66,7 @@
                     <input type="text" name="subject" placeholder="Your Subject">
                     <textarea name="message" cols="30" rows="7" placeholder="Your Message"></textarea>
                     <div>
-                        <button type="submit" class="submit">Send</button>
+                        <button type="submit" class="submit" name="submit">Send</button>
                     </div>
                 </form>
             </div>

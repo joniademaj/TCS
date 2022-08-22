@@ -14,15 +14,20 @@
 
     <section class="container our-work">
       <div>
-        <h1>Our Projects</h1>
-        <p>In the section below you will find our projects build by our professional team</p>
+        <h1 data-aos="zoom-in">Our Projects</h1>
+        <p data-aos="zoom-out">In the section below you will find our projects build by our professional team</p>
       </div>
     </section>
 
     <section class="container mt-5" style="margin-top: 250px !important">
-        <div class="title">
-          <h1 class="text-center">Projects</h1>
-        </div>
+      <div class="projects-title container">
+        <h1 class="text-center">Projects</h1>
+          <p>
+            Our selection from some recent projects build by our team for some 
+            of our clients and how we have
+            helped them to take their business to the next level with digital solutions
+          </p>
+      </div>    
     </section>
 
     <div class="circle">
